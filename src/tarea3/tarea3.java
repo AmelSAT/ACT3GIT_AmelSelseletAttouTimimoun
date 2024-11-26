@@ -19,10 +19,12 @@ public class tarea3 {
 
     public static void obtenerEnterosEntreDosNumeros() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el primer número: ");
         int num1 = scanner.nextInt();
-        System.out.print("Introduce el segundo número: ");
+        System.out.print("Introduce el primer número: ");
         int num2 = scanner.nextInt();
+        System.out.print("Introduce el segundo número: ");
+        int num3 = scanner.nextInt();
+        System.out.print("Introduce el tercer número: "); 
 
         if (num1 != num2) {
             int start = Math.min(num1, num2);
@@ -31,7 +33,7 @@ public class tarea3 {
                 System.out.println(i);
             }
         } else {
-            System.out.println("Los números deben ser distintos.");
+            System.out.println("El número " + num3 + " está entre " + num1 + " y " + num2);
         }
     }
 }
